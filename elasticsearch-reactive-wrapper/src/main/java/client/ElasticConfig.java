@@ -8,6 +8,8 @@ public class ElasticConfig {
 
     public static RestHighLevelClient create() {
         return new RestHighLevelClient(RestClient.builder(
+
+		//TO BE PICKED from application properties file
                 new HttpHost("localhost", 9200, "http")
         ));
     }
